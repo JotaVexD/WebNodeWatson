@@ -22,8 +22,9 @@ DB_PORT=3306
 DB_NAME=nome_do_banco
 ~~~
 
+#
 
-Execute ```npm run migrate``` Para criar as tabelas do banco.
+Execute ```npm run migrate``` para criar as tabelas do banco.
 
 ### Obs.:
 Se o migrate apresentar problema de execução, usar a instalação global do migrate:
