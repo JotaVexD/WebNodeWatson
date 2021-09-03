@@ -2,14 +2,13 @@ function hearSound(){
     var idmessage = this.name;
     $.ajax({
         method: "POST",
-        url: "/generateSound", //rota get para leitura de comentários
+        url: "/generateSound", 
         dataType: 'json',
         data: { idmessage },    
-        statusCode:{ //tratando respostas
+        statusCode:{ 
             201:(response)=>{
                 nowDate = new Date();
-                $("#source").attr('src', response.url+"?"+nowDate.getTime()); //resolve problema de cache
-                $("#audio").get(0).load();
+                $("#source").attr('src', response.url+"?"+nowDate.getTime()); 
                 $("#audio").get(0).play();
                 
             },
@@ -23,9 +22,9 @@ function hearSound(){
 $(document).ready(function(){
     $.ajax({
         method: "GET",
-        url: "/readComments", //rota get para leitura de comentários
+        url: "/readComments", 
         dataType: 'json',
-        statusCode:{  //tratando respostas..
+        statusCode:{ 
             302:(response)=>{
                 var json = response['responseJSON'];
                 json.comments.forEach(element => {
@@ -39,13 +38,13 @@ $(document).ready(function(){
     });
 
     $("#btnCadastrar").click(function(e) {
-        e.preventDefault(); //setando
+        e.preventDefault(); 
         var text = document.getElementById('textArea');
         var message = text.value;
         text.value = " ",
         $.ajax({
             method: "POST",
-            url: "/comments", //rota para criar comentário no database
+            url: "/comments",
             data: { message },
             dataType: 'json',
             statusCode: {

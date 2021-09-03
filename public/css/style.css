@@ -6,7 +6,6 @@
     background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-    /*background: #dad7d7;*/
     background-color: rgb(104, 104, 104);
 }
 

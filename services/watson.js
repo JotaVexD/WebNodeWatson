@@ -16,8 +16,6 @@ class TextToSpeech{
             })
         }
         
-        
-        //autenticação
         const textToSpeech = new TextToSpeechV1({
             authenticator: new IamAuthenticator({
                     apikey: process.env.WATSON_API_KEY
@@ -25,8 +23,6 @@ class TextToSpeech{
             serviceUrl: process.env.WATSON_URL
         });
         
-        //parametros utilizados
-        console.log(comment)
         const params = {
             text: comment[0].comment,
             voice: 'pt-BR_IsabelaVoice',
