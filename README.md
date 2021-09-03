@@ -46,3 +46,4 @@ WATSON_API_KEY=
 ~~~Bash
 node app.js
 ~~~
+E acesse ```http://localhost:3000/index```
