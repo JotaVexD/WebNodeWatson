@@ -8,7 +8,7 @@ Execute na pasta do projeto:
 npm install
 ~~~ 
 
-#
+
 ## Banco de Dados
 Será necessário criar uma database vazia em MySQL.
 
@@ -32,7 +32,7 @@ Se o migrate apresentar problema de execução, usar a instalação global do mi
 npm install -g migrate 
 ~~~
 
-#
+
 ## API Text to Speech - IBM Watson
 Colocar no arquivo ```.env``` a chave e a url disponível no site da IBM
 
@@ -41,9 +41,7 @@ WATSON_URL=
 WATSON_API_KEY=
 ~~~
 
-#
-### Executando
-~~~Bash
-node app.js
-~~~
-E acesse ```http://localhost:3000/index```
+
+## Executando
+
+Rode ```node app.js``` e acesse ```http://localhost:3000/index```
