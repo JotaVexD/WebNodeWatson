@@ -1,0 +1,138 @@
+::-webkit-scrollbar-track {
+    background-color: #ffffff65;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    /*background: #dad7d7;*/
+    background-color: rgb(104, 104, 104);
+}
+
+
+body{
+    background-color: #d6d6d6;
+}
+
+#rowTitle{
+    margin-bottom: 60px;
+}
+
+h1{
+    color: black;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.line{
+    border-left: 2px solid rgb(104, 104, 104);
+}
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,0.9);
+    
+}
+
+
+#textArea{
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 1px solid rgb(141, 141, 141);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnCadastrar{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(104, 104, 104);
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.contents{
+    width: 100%;
+}
+
+#audio{
+    display: none;
+}
+
+#comments{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    height: 400px;
+    overflow: auto;
+}
+
+.element{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding:30px;
+    border-radius: 5px;
+    background-color:  #eeeeee;
+    border: 1px solid rgb(141, 141, 141);
+    min-height: 100px;
+}
+
+.elementMessage{
+    color: black;
+    width: 70%;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.ouvir{
+    display: block;
+    margin-left: auto;
+    background-color: rgb(104, 104, 104);
+    padding: 3px 20px 3px 20px; 
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    float: right;
+    margin-right: 15px;
+    margin-top: -30px;
+    border: 0px;   
+}
+
+@media screen and (max-width: 767px){
+    
+    #rowTitle{
+        margin-bottom: 50px;
+    }
+    
+    .line{
+        border-left: 0px;
+        border-top: 2px solid rgb(104, 104, 104);
+    }
+
+    .line h2{
+        margin-top: 20px;
+    }
+}
